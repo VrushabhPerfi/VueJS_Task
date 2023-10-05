@@ -1,0 +1,60 @@
+@import "../../scss/_variables.scss";
+
+.userLogin {
+  text-align: right;
+  display: flex;
+  margin: 2rem 30rem;
+
+  &__label {
+    font-size: 16px;
+    width: 30%;
+  }
+  &__text {
+    border: none;
+    border-bottom: 1px solid;
+    width: 70%;
+    margin-left: 15px;
+  }
+}
+.loginButton {
+  padding: 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+@media (min-width: $sm) and (max-width: $md) {
+  .userLogin {
+    margin: 3rem 1rem;
+    &__label {
+      width: 35%;
+    }
+    &__text {
+      margin-right: 10px;
+      width: 65%;
+    }
+  }
+}
+
+@media (min-width: $md) and (max-width: $lg) {
+  .userLogin {
+    margin: 3rem 1rem;
+    &__label {
+      width: 20%;
+    }
+    &__text {
+      width: 80%;
+    }
+  }
+}
+@media (min-width: $lg) and (max-width: $xl) {
+  .userLogin {
+    margin: 3rem 1rem;
+    &__label {
+      width: 20%;
+    }
+    &__text {
+      width: 80%;
+      margin-right: 100px;
+    }
+  }
+}

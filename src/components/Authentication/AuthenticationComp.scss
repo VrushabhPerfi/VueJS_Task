@@ -1,0 +1,56 @@
+@import "../../scss/_variables.scss";
+
+.userRegistration {
+  text-align: right;
+  display: flex;
+  margin: 2rem 30rem;
+
+  &__label {
+    font-size: 16px;
+    width: 30%;
+  }
+  &__text {
+    border: none;
+    border-bottom: 1px solid;
+    width: 70%;
+    margin-left: 15px;
+  }
+}
+.registrationButton {
+  padding: 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+@media (min-width: $sm) and (max-width: $md) {
+  .userRegistration {
+    margin: 3rem 1rem;
+    &__text {
+      margin-right: 10px;
+    }
+  }
+}
+@media (min-width: $md) and (max-width: $lg) {
+  .userRegistration {
+    margin: 3rem 1rem;
+    &__label {
+      width: 20%;
+    }
+    &__text {
+      width: 80%;
+    }
+  }
+}
+
+@media (min-width: $lg) and (max-width: $xl) {
+  .userRegistration {
+    margin: 3rem 1rem;
+    &__label {
+      width: 20%;
+    }
+    &__text {
+      width: 80%;
+      margin-right: 100px;
+    }
+  }
+}
